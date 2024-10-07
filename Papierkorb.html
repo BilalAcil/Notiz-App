@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+  <html lang="deu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep-Papierkorb</title>
+    <link rel="icon" href="./img/icons/BigIcon.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body onload="deleteRender()">
+    <div class="dialog-bg"></div>
+      <div class="header">
+        <div class="menu-icon">
+          <img id="menu-icon" onclick="showMenu()" src="./img/icons/bars-solid.svg">
+          <img id="x-icon" class="x-button" onclick="closeMenu()" src="./img/icons/75519.png">
+        </div>
+        <div class="logo">
+          <img src="./img/icons/BigIcon.png" alt="">
+          <h2 class="notizen-header">Notizen</h2>
+        </div>
+        <div class="lupe-div">
+          <button class="lupe-button"><img class="lupe" src="./img/icons/lupe.png" alt="Lupe"></button>
+          <input id="headerInput" class="header-input" placeholder=" Suchen"></input>
+          <button onclick="deleteInput()" class="input-delete"><b class="x">X</b></button>
+        </div>
+        <div class="header-option">
+          <img src="./img/icons/pfeil.png" alt="Pfeil">
+          <img src="./img/icons/listenansicht.png" alt="Liste">
+          <img src="./img/icons/einst.png" alt="Einstellungen">
+          <img style="opacity: 0.6;" src="./img/icons/-apps.png" alt="Apps">
+          <img src="./img/icons/B.png" alt="Benutzer">
+        </div>
+      </div>
+      <div class="notizen">
+        <div id="menu" class="burger-menu">
+        <nav>
+          <section><a href="index.html"><img src="./img/icons/birne.png" alt=""> Notizen</a></section>
+          <section><img src="./img/icons/glocke.png" alt=""> Erinnerungen</section>
+          <section><img src="./img/icons/Icon-Stift.png" alt=""> Labels bearbeiten</section>
+          <section><img src="./img/icons/archiv.png" alt=""> Archiv</section>
+          <section><img src="./img/icons/papierkorb.png" alt=""> Papierkorb</section>
+        </nav>
+      </div>
+        <div class="delete1" id="delete"></div>
+      </div>
+  </body>
+  </html>
